@@ -14,7 +14,7 @@ spec:
   template:
     metadata:
       labels:
-        purpose: tolreration-demo
+        purpose: toleration-demo
         project: robomart
     spec:
       nodeSelector:
