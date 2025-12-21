@@ -11,12 +11,12 @@ spec:
           - key: topology.kubernetes.io/zone
             operator: In
             values:
-            - us-east-1c
+            # - us-east-1c
             - us-east-1d
-          - key: disk
-            operator: In
-            values:
-            - ssd
+          # - key: disk
+          #   operator: In
+          #   values:
+          #   - ssd
       preferredDuringSchedulingIgnoredDuringExecution:
       - weight: 100
         preference:
