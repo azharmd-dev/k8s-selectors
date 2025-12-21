@@ -20,7 +20,7 @@ spec:
       nodeSelector:
         kubernetes.io/hostname: ip-192-168-2-181.ec2.internal  
       containers:
-      - name: nginx-tl
+      - name: nginx
         image: nginx:mainline-alpine3.23
       tolerations:
       - key: "project"
