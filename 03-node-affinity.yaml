@@ -17,14 +17,14 @@ spec:
             operator: In
             values:
             - ssd
-      # preferredDuringSchedulingIgnoredDuringExecution:
-      # - weight: 100
-      #   preference:
-      #     matchExpressions:
-      #     - key: project
-      #       operator: In
-      #       values:
-      #       - amazon
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 100
+        preference:
+          matchExpressions:
+          - key: project
+            operator: In
+            values:
+            - amazon
   containers:
   - name: nginx
     image: nginx:mainline-alpine3.23
